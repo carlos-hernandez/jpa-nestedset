@@ -71,6 +71,7 @@ public class MultiRootNodeTest extends FunctionalNestedSetTest {
         em.refresh(javaCat);
         em.refresh(netCat);
         em.refresh(phpCat);
+        em.refresh(ejbCat);
         em.getTransaction().commit();
 
         assert 1 == javaCat.getLeftValue();
